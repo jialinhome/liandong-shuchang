@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            body {
+                margin: 0;
+                height: 100%;
+            }
+            #container {
+                position: relative;
+            }
+            #main {
+                height: 100%;
+                position: absolute;
+                z-index: 1;
+            }
+            .label-name {
+                /*width: 200px;*/
+                border: 0;
+                border-radius: 4px;
+                background-color: rgba(228,228,228,0.6);
+                padding: 4px 8px;
+                font-family: 宋体;
+            }
+            #button1 {
+                position: absolute;
+                z-index: 2;
+            }
+            #message {
+                height: 200px;
+                width: 130px;
+                background-color: rgba(190,190,190,0.6);
+                border-top: 1px solid #ffffff;
+                padding: 5px 0 0 8px;
+                overflow: auto;
+                font-size: 14px;
+            }
+            #message-con{
+                position: absolute;
+                z-index: 2;
+                top: 20px;
+                right: 20px;
+                border: 1px solid rgb(190,190,190);
+                border-radius: 4px;
+                color: #ffffff;
+                font-family: 微软雅黑;
+            }
+            #title p {
+                margin: 0;
+                padding: 3px;
+                text-align: center;
+                font-weight: bold;
+            }
+            #title {
+                background-color: rgba(190,190,190,0.6);
+                /*padding: 3px;*/
+            }
+            #button1 {
+                border: 0;
+                border-radius:2px;
+            }
+            #button1:focus {
+                border: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="main"></div>
+            <input type="button" name="change" id="button1" value="显示点标签">
+            <div id="message-con">
+                <div id="title">
+                    <p>TOP10楼盘</p>
+                </div>
+                <div id="message"></div>
+            </div>
+        </div>
+        <script src="./js/echarts.js"></script>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=WkwzSIGFelxNmNMdUOM9W9QZ"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./example.js"></script>
+    </body>
+</html>
